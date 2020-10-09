@@ -1,4 +1,4 @@
-###### Youtube Kanalı Deposu
+# Youtube Kanalı Deposu
 
 Burada youtube kanalımda oluşturmuş olduğum HTML-CSS-JS oynatma listesine ait uygulama
 dosyalarını burada bulabilirsiniz. Aşağıdaki bağlantılardan ilgili oynatma listesine ve kanala ulaşabilirsiniz.
