@@ -1,0 +1,28 @@
+h1 {
+    color: red;
+}
+
+.ikinciBaslikRengi {
+    color: orange;
+}
+
+h2,
+h3 {
+    color: blue;
+}
+
+p {
+    color: green;
+}
+
+.fontBoyutu {
+    font-size: 20pt;
+}
+
+#DKK {
+    border: orange 2px solid;
+}
+
+#Sehir {
+    color: gray;
+}
