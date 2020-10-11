@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+}
+
+div {
+    width: 100px;
+    height: 50px;
+    background-color: brown;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: black 5px solid;
+    border-bottom: black 5px dotted;
+    /*top right bottom left*/
+    /*margin: 0 0 10 0; tavsiye edilmez*/
+}
+
+.border-box {
+    box-sizing: border-box;
+}
+
+.border-blue {
+    border-color: blue;
+}
+
+#div3 {
+    color: white;
+}
+
+.outline {
+    outline-style: solid;
+    outline-width: 20px;
+}
+
+.outline-green {
+    outline-color: green;
+}
+
+.outline-offset {
+    outline-offset: 10px;
+}

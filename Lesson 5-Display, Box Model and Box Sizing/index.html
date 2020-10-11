@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display, Box Model and Box Sizing</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <!-- Display: block, inline, inline-block, none-->
+    <h1>Language</h1>
+    <span style="display:inline-block; width: 80px; height: 50px;">TR</span>
+    <span>EN</span>
+    <!-- Box Model: Display:block and Display:inline-block-->
+    <!-- margin:dış boşluk, border:kenarlık, padding:iç boşluk, content:içerik -->
+    <div>DIV1</div>
+    <div class="border-box border-blue">DIV2</div>
+
+    <div id="div3" class="border-box">DIV3</div>
+
+    <!-- box-sizing: content-box (default) -->
+    <!-- Width(genişlik): width+ml+mr+bl+br+pl+pr -->
+    <!-- Height(yükseklik): height+mt+mb+bt+bb+pt+pb -->
+
+    <!-- box-sizing: border-box -->
+    <!-- width=width | height=height -->
+
+    <!-- outline(kenarlık dış çizgisi) -->
+    <!-- outline | outline-style | outline-color | outline-width | outline-offset -->
+    <div class="outline outline-green outline-offset">DIV4</div>
+    <br>
+    <br>
+    <br>
+
+    <button type="button" onclick="hide()">Gizle</button>
+    <button type="button" onclick="show()">Göster</button>
+
+
+</body>
+
+</html>
