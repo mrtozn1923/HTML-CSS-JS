@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units and Viewport</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="font-size: 30px;">
+
+    <div style="width:20vw;height:20vh;background-color:orange">
+        <p style="font-size: 2vmax;">Mert Özen</p>
+    </div>
+
+    <!-- default font-size:16px -->
+    <!-- Absolute Lengths -->
+    <!--
+    cm, mm, 
+    in=inches (1in=96px=2.54cm), 
+    px=pixels (1px=1/96th of 1 in),
+    pt=points (1pt=1/72 of 1 in),
+    pc=picas (1pc=12pt)
+    ------------------------
+    ppi=pixels per inch
+    dpi=dots per inch
+-->
+    <p>Mert</p>
+    <p style="font-size: 18px;">Mert</p>
+    <p style="font-size: 18pt;">Mert</p>
+
+    <!-- Relative Lengths -->
+    <!-- 
+        em=current font-size
+        rem=root element (html) font-size
+        % = parent element
+        viewport(%)=vw,vh,vmin,vmax 
+-->
+    <div>
+        <p style="font-size: 1em;">Türkiye Cumhuriyeti</p>
+    </div>
+
+    <div style="font-size: 32px;">
+        <div style="font-size: 64px;">
+            <p style="font-size: 1em;">Türkiye Cumhuriyeti</p>
+        </div>
+        <p style="font-size: 1rem;">HTML</p>
+    </div>
+
+    <p>CSS</p>
+
+    <div class="boyutRem"></div>
+
+    <div class="boyutEm"></div>
+
+    <div style="height:150px;background-color: blue;">
+        <div style="height:50%;background-color: green;"></div>
+    </div>
+
+</body>
+
+</html>

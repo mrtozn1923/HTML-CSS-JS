@@ -1,0 +1,19 @@
+html {
+    font-size: 20px;
+}
+
+.boyutRem {
+    width: 10rem;
+    /*200px*/
+    height: 5rem;
+    /*100px*/
+    background-color: green;
+}
+
+.boyutEm {
+    width: 10em;
+    /*200px*/
+    height: 5em;
+    /*100px*/
+    background-color: red;
+}
