@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and Overflow</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- float: left | right | none(default) -->
+    <!-- clear: right | left | both -->
+    <!-- overflow: hidden | scroll | auto | visible(default) -->
+    <!-- overflow block düzeyindeki elemanlarla kullanılır -->
+    <!-- selector::psuedo-elements -->
+
+    <div class="container">
+        <img src="img/image.jpg" alt="zürafa">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium omnis perferendis ad voluptatem, mollitia labore quo aperiam fuga eos officia adipisci, totam molestias, commodi tenetur dignissimos unde qui recusandae velit! Impedit, nesciunt
+            doloribus veniam dicta dolorum tempora repellat aut maiores in cumque! In quis, quia iste est quam voluptatum aliquid dolorem aspernatur libero ducimus praesentium dolores dolore saepe earum obcaecati! Architecto amet voluptatum atque asperiores
+            ipsum a cumque consectetur adipisci aliquid nam, ut numquam tenetur tempore magnam dicta quibusdam rem vel sapiente pariatur aut aperiam error! Voluptatibus ut quis quod! Autem, nesciunt. Quas, laborum. Ipsum impedit saepe laborum nulla temporibus
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur laboriosam placeat voluptas rem? Accusantium quia eaque voluptates aliquid ratione mollitia, error fugiat fugit consequatur blanditiis reiciendis, odio doloribus hic debitis.
+            Quod quibusdam, molestias dignissimos explicabo mollitia quasi odit fugit rerum voluptates, esse recusandae saepe cumque quo culpa optio adipisci eum inventore dolores officia ut pariatur repellat provident necessitatibus. Veritatis, numquam.
+            In tempora numquam cumque, sapiente quam consectetur veritatis enim vero hic corrupti unde vitae quos eligendi repellendus et, animi ducimus. Praesentium consequuntur voluptatibus recusandae fugiat labore, inventore repellendus soluta rerum.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum id quas quia iure. Facere aut at, amet totam praesentium enim quia officiis debitis fuga, dolore, provident nesciunt tempora consequuntur soluta.Ratione perferendis voluptatem,
+            vel maxime labore nostrum quidem? Ullam officiis obcaecati eveniet repellendus laborum itaque fugit ad alias provident blanditiis et cum, dolorum rerum soluta cupiditate. Dolorem laborum voluptatum quibusdam.
+        </p>
+    </div>
+
+    <!-- psuedo-elements ifadesi ile clear kullanımı -->
+    <div class="clearfix" style="border: 2px black solid;">
+        <div style="width: 200px; height: 200px; background-color:blue; float: left;"></div>
+        <div style="width: 200px; height: 200px; background-color:orange; float: left"></div>
+    </div>
+
+    <!-- eleman bazlı clear kullanımı -->
+    <div style="width: 200px; height: 200px; background-color:blue; float: left;"></div>
+    <div style="width: 200px; height: 200px; background-color:orange; float: right;"></div>
+
+    <!-- <p style="clear:both;"></p> -->
+
+    <div style="width: 200px; height: 200px; background-color:red;clear: both;"></div>
+
+    <div style="width: 200px; height: 200px; background-color:purple;"></div>
+
+
+
+
+
+</body>
+
+</html>

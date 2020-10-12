@@ -1,0 +1,18 @@
+.container {
+    border: 2px red solid;
+    /*height: 100px; scroll cıkacaktır*/
+    overflow: auto;
+}
+
+img {
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: block;
+}
