@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- position: static | absolute | relative | fixed | sticky -->
+    <!-- varsayılan değer static (olağan akış) -->
+    <!-- static haricindekiler top | right | left | bottom değerleri alabilir -->
+    <!-- z-index:auto | number -->
+    <style>
+        #parent2 {
+            /*
+            position: relative;
+            left: 230px;
+            top: 50px;*/
+            /*-----------------------*/
+            /*
+            position: static;*/
+            /*-----------------------*/
+            /*
+            position: absolute;
+            top: 150px;
+            right: 80px;
+            z-index: 1;*/
+            /*-----------------------*/
+            /* position: fixed;
+            z-index: 1;
+            top: 50vh;
+            left: 50vw;*/
+            /*-----------------------*/
+            position: sticky;
+            top: 50px;
+            left: calc(50vw - 100px);
+            /*scrollbar da hesaplamaya katılıyor*/
+        }
+        
+        #child2 {
+            /*
+            position: static;*/
+            /*-----------------------*/
+            /*
+            position: relative;
+            left: 250px;*/
+            /*-----------------------*/
+            /*position: static*/
+            /*-----------------------*/
+            /*position: static;*/
+            /*-----------------------*/
+            position: static;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="parent1" class="div-box div-red">
+        Parent 1
+        <div id="child1">Child 1</div>
+    </div>
+    <div id="parent2" class="div-box div-blue">
+        Parent 2
+        <div id="child2">Child 2</div>
+        Parent 2
+    </div>
+    <div id="parent3" class="div-box div-green">
+        Parent 3
+        <div id="child3">Child 3</div>
+    </div>
+    <div style="height: 200px;background-color:purple; opacity: 0.6;"></div>
+    <!--parent sabit yükseklik değeri almıyorsa height olarak x% veremezsin -->
+    <!-- ancak genişlik olarak x% verilebilir -->
+    <div style="height: 200px;background-color:black; opacity: 0.6;"></div>
+    <div style="height: 200px;background-color:purple; opacity: 0.6;"></div>
+    <div style="height: 200px;background-color:black; opacity: 0.6;"></div>
+    <div style="height: 200px;background-color:maroon; opacity: 0.6;"></div>
+    <div style="height: 200px;background-color:purple; opacity: 0.6;"></div>
+    <div style="height: 200px;background-color:black; opacity: 0.6;"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    /*tarayıcı boşluklarını temizle*/
+}
+
+.div-box {
+    width: 200px;
+    height: 200px;
+    font-size: 30px;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.div-red {
+    background-color: red;
+    opacity: 0.8;
+}
+
+.div-blue {
+    background-color: blue;
+    opacity: 0.8;
+}
+
+.div-green {
+    background-color: green;
+    opacity: 0.8;
+}
+
+div div {
+    background-color: black;
+    color: white;
+    height: 100px;
+    width: 200px;
+    opacity: 0.8;
+}
