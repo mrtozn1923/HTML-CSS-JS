@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selectors</title>
+
+</head>
+<!-- 
+    tag[attribute] ->Eleman ilgili özniteliği içeriyorsa
+    tag[attribute=value] ->Elemanın özniteliği girilen değer ile eşleşiyorsa
+    tag[attribute~=value] ->Elemanın özniteliği girilen değeri net olarak içeriyorsa
+    tag[attribute|=value] ->Elemanın özniteliği girilen değer ile başlayan (boşluksuz)
+    tag[attribute^="value"] ->Elemanın özniteliği girilen değer ile başlayan 
+    tag[attribute$="value"] ->Elemanın özniteliği girilen değer ile bitiyorsa
+    tag[attribute*="value"] ->Elemanın özniteliği girilen değeri içeriyorsa
+ -->
+
+<body>
+
+    <!-- <style>
+        div[class] {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <div class=""></div>
+    <div></div>
+    <div class=""></div>
+    <div class=""></div> -->
+
+    <!-- <style>
+        div[class=box] {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <div class="box"></div>
+    <div></div>
+    <div class="box box-blue"></div>
+    <div class=""></div> -->
+
+    <!-- <style>
+        div[class~=box] {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <div class="box box-blue"></div>
+    <div></div>
+    <div class="box"></div>
+    <div class="box"></div> -->
+
+    <!-- <style>
+        div[class|=box] {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <div class="box-a"></div>
+    <div></div>
+    <div class="box a"></div>
+    <div class="box box-green"></div> -->
+
+    <!-- <style>
+        div[class^=box] {
+            width: 100px;
+          height: 100px;
+            background-color: red;
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <div class="box-a"></div>
+    <div></div>
+    <div class="box a"></div>
+    <div class="box box-green"></div>   -->
+
+    <!-- <style>
+        div[class$=box] {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <div class="box abox"></div>
+    <div></div>
+    <div class="box a-box"></div>
+    <div class="box box-green"></div> -->
+
+    <style>
+        div[class*=box] {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin-bottom: 10px;
+        }
+    </style>
+
+    <div class="abox box-blue"></div>
+    <div></div>
+    <div class="a-box"></div>
+    <div class="box-green"></div>
+
+
+</body>
+
+</html>
