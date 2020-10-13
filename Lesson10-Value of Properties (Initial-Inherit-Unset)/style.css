@@ -1,0 +1,23 @@
+body {
+    font-size: 80px;
+}
+
+.wrapper {
+    color: red;
+}
+
+.wrapper p {
+    color: green;
+}
+
+p.one {
+    color: inherit;
+}
+
+p.two {
+    color: initial;
+}
+
+p.three {
+    color: unset;
+}
