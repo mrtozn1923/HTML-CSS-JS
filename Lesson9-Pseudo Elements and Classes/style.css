@@ -1,0 +1,29 @@
+p.after:after {
+    content: "👦";
+}
+
+p.before::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: green;
+}
+
+p.first-line::first-line {
+    color: red;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+
+.box:hover {
+    background-color: green;
+}
+
+::selection {
+    background-color: red;
+}

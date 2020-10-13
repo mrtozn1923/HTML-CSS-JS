@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes and Elements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- 
+        ::pseudo elements ->Bir elemanın belirtilen parçalarına stil uygulamak için
+        :pseudo classes ->Bir elemanın özel durumunu tanımlamak için
+        her ikisi için de : kullanmak uyumluluk açısından daha doğru olacaktır. 
+    
+        selector:pseudo-class veya selector::pseudo-elements şeklinde kullanılır.
+        : veya :: şeklinde selector olmadan kullanılırsa tüm elemanlara etki eder.
+    -->
+
+    <!-- pseudo elements 
+        ::after / ::before / ::first-letter / ::first-line / ::selection
+    -->
+    <p class="after before">Mert Özen</p>
+    <p class="after before">Türkiye</p>
+
+    <p class="first-line">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste quod voluptate architecto aspernatur. Et officiis mollitia modi est veritatis voluptates ducimus iure distinctio non! Facilis quasi saepe nemo minima dignissimos?Lorem ipsum dolor sit amet
+        consectetur, adipisicing elit. Sequi voluptate, neque est repellendus ducimus soluta eveniet sapiente accusantium quaerat, omnis suscipit fugiat quis in fugit ipsa dolor quasi deserunt. Vel. Eaque laudantium ipsum perspiciatis accusamus aut odit
+        quibusdam non impedit id corrupti, accusantium, veniam in saepe quas nihil. Sapiente est dolorem ea aspernatur fuga quia odio consequatur magni molestiae non. Accusamus, ducimus. Repellendus nisi officiis perferendis sapiente, totam sed amet.
+        Quisquam placeat nostrum facilis natus quia. Dolorem perspiciatis labore quod modi. Hic repudiandae quisquam consequatur, aperiam dolorum ab. Repudiandae, culpa?</p>
+
+
+
+    <!-- --------------------------------------------------------------------------- -->
+
+
+    <!-- pseudo classes 
+        :hover / :active / :not(selector) / :nth-last-child(2)
+    -->
+    <div class="box">
+
+    </div>
+
+    <style>
+        #kutu {
+            background-color: green;
+        }
+        
+        #kutu:hover p#adSoyad {
+            display: none;
+        }
+    </style>
+
+    <div id="kutu">
+        <p>Türkiye Cumhuriyeti</p>
+        <p id="adSoyad">Mert Özen</p>
+    </div>
+
+    <style>
+        ol.sirali-liste li:nth-last-child(2) {
+            color: red;
+            font-size: 25px;
+        }
+    </style>
+
+    <ol class="sirali-liste">
+        <li>Elma</li>
+        <li>Armut</li>
+        <li>Portakal</li>
+        <li>Karpuz</li>
+    </ol>
+
+
+</body>
+
+</html>
