@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinators</title>
+</head>
+
+<!--
+    descendant selector (space)     -> div p ->div altındaki tüm p etiketleri
+    child selector (>)              -> div>p ->div elemanının hemen altındaki p
+    adjacent sibling selector (+)   -> div+p ->div elemanın hemen altındaki p
+    general sibling selector (~)    -> div~p ->öncesinde div elemanı bulunan p etiketleri
+-->
+
+<body>
+
+    <!-- descendant selector (space) -->
+    <style>
+        #one {
+            border: 2px black solid;
+            margin-bottom: 10px;
+        }
+        
+        #one p {
+            color: red;
+        }
+    </style>
+
+    <div id="one">
+        <p>Türkiye</p>
+        <ul>
+            <li>
+                <p>Türkiye</p>
+            </li>
+            <li>
+                <p>Türkiye</p>
+            </li>
+            <li>
+                <p>Türkiye</p>
+            </li>
+        </ul>
+    </div>
+    <!-- ---------------------------- -->
+
+    <!-- child selector (>) -->
+    <style>
+        #two {
+            border: 2px black solid;
+            margin-bottom: 10px;
+        }
+        
+        #two>p {
+            color: blue;
+        }
+    </style>
+
+    <div id="two">
+        <p>Türkiye</p>
+        <ul>
+            <li>
+                <p>Türkiye</p>
+            </li>
+            <li>
+                <p>Türkiye</p>
+            </li>
+            <li>
+                <p>Türkiye</p>
+            </li>
+        </ul>
+    </div>
+
+
+    <!-- ---------------------------- -->
+
+    <!-- adjacent sibling selector (+) -->
+    <style>
+        #three {
+            border: 2px black solid;
+            margin-bottom: 10px;
+        }
+        
+        #three div+p {
+            color: green;
+        }
+        
+        #three div {
+            width: 100px;
+            height: 50px;
+            background-color: red;
+        }
+    </style>
+    <div id="three">
+        <p>Mert Özen</p>
+        <div>Türkiye</div>
+        <p>İstanbul</p>
+        <p>Kastamonu</p>
+    </div>
+    <!-- ---------------------------- -->
+
+    <!-- general sibling selector (~) -->
+    <style>
+        #four {
+            border: 2px black solid;
+            margin-bottom: 10px;
+        }
+        
+        #four div~p {
+            color: green;
+        }
+        
+        #four div {
+            margin-top: 20px;
+            width: 100px;
+            height: 50px;
+            background-color: red;
+        }
+    </style>
+    <div id="four">
+        <p>Mert Özen</p>
+        <div>Türkiye</div>
+        <p>Türkiye</p>
+        <p>İstanbul</p>
+    </div>
+    <!-- ---------------------------- -->
+</body>
+
+</html>
