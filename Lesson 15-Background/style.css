@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    height: 150vh;
+}
+
+div {
+    margin-left: 250px;
+    margin-bottom: 50px;
+    width: 400px;
+    height: 300px;
+    border: 2px black solid;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.background-color {
+    background-color: black;
+}
+
+.background-image {
+    background-image: url(img/background-image.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw 150vh;
+}
+
+.repeatable-background-image {
+    background-image: url(img/repeat_image1.jpg), url(img/repeat_image2.jpg);
+    background-position: right top, left top;
+    background-size: 100px 100px, 200px, 200px;
+    background-attachment: fixed, scroll;
+    background-repeat: no-repeat;
+    /*  background-repeat: no-repeat, repeat;*/
+}
+
+.linear-gradient {
+    background: rgb(0, 36, 27);
+    background: linear-gradient(36deg, rgba(0, 36, 27, 1) 2%, rgba(158, 69, 111, 1) 38%, rgba(0, 212, 255, 1) 100%);
+}
+
+.radial-gradient {
+    background: rgb(2, 0, 36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+.cover {
+    background-image: url(img/css_logo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.contain {
+    background-image: url(img/css_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
