@@ -1,0 +1,16 @@
+:root {
+    /*Color Palette https://colorhunt.co/*/
+    --primary-color: #070d59;
+    --secondary-color: #1f3c88;
+    --background-color: #5893d4;
+    --text-color: #ceddef;
+}
+
+body {
+    margin: 0;
+}
+
+div {
+    margin-bottom: 10px;
+    height: 200px;
+}
