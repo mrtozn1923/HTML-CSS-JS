@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            text-align: center;
+        }
+        
+        div {
+            text-align: center;
+        }
+        
+        img {
+            width: 600px;
+        }
+    </style>
+</head>
+
+<!-- browser default -> external css -> internal css -> inline css(style attribute) -->
+
+<body>
+
+    <h1>SPECIFICITY-ÖZGÜLLÜK</h1>
+    <hr>
+    <div>
+        <img src="specificity.png" alt="specificity">
+    </div>
+    <hr>
+
+    <ul id="nav">
+        <li class="active">
+            Mert
+            <a href="">Türkiye</a>
+        </li>
+        <li>
+            Özen
+            <a href="" style="color:orange;">Cumhuriyeti</a>
+        </li>
+    </ul>
+
+    <hr>
+
+    <ul>
+        <li>
+            Mert
+            <a href=" ">Türkiye</a>
+        </li>
+        <li>
+            Özen
+            <a href=" ">Cumhuriyeti</a>
+        </li>
+    </ul>
+
+
+</body>
+
+</html>

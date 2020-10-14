@@ -1,0 +1,19 @@
+ul {
+    color: red;
+}
+
+ul li {
+    color: blue;
+}
+
+ul#nav li.active a {
+    color: purple;
+}
+
+ul#nav li a {
+    color: green;
+}
+
+ul li a {
+    /*color: red !important;*/
+}
