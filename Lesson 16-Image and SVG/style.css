@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+}
+
+div {
+    width: 50vw;
+    background-color: aqua;
+}
+
+img {
+    /* width: 100%; */
+    max-width: 100%;
+}
+
+div>img {
+    /* width: 100%; */
+    /* max-width: 100%; */
+}
