@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text and Font</title>
+</head>
+
+<!-- TEXT -->
+<!-- color | background-color | text-align | direction | vertical-align -->
+<!-- text-decoration | text-transform | text-indent | letter-spacing | line-height | word-spacing -->
+<!-- white-space | text-shadow | text-overflow | word-wrap | word-break | writing-mode -->
+
+<!-- Responsive Text -->
+
+<!-- https://www.w3schools.com/css/css_text.asp 
+     https://www.w3schools.com/css/css3_text_effects.asp
+-->
+
+<!-- FONT -->
+<!-- font-family | font-style | font-weight | font-variant | font-size | font -->
+<!-- @font-face rule-->
+
+<!-- https://fonts.google.com/ -->
+<!-- https://www.fonttr.com/ -->
+<!-- https://www.dafont.com/ -->
+
+<body>
+
+    <style>
+        p {
+            text-align: center;
+        }
+        
+        body>span {
+            text-align: center;
+        }
+        
+        p>span {
+            color: red;
+            font-weight: bold;
+            font-size: 20pt;
+        }
+        
+        div#one {
+            text-align: center;
+            color: green;
+            font-size: 30pt;
+        }
+        
+        div#two {
+            margin-top: 20px;
+            border: 2px black solid;
+            width: 50vw;
+            height: 100px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
+        div#two:hover {
+            white-space: normal;
+            overflow: auto;
+        }
+        
+        div#three {
+            width: 300px;
+            height: 250px;
+            border: 2px black solid;
+            line-height: 1.5;
+            overflow: auto;
+        }
+    </style>
+
+    <p>Lorem ipsum <span>dolor</span> sit amet.</p>
+
+    <div id="one">
+        <span>Lorem ipsum dolor sit amet.</span>
+    </div>
+
+    <div id="two">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error vitae officia repellat amet dolor repudiandae dicta modi natus provident, facilis, sint soluta. Nostrum quae beatae tenetur totam modi cumque. Doloribus?Voluptas maiores quibusdam hic quidem
+        quas commodi veniam iusto. Distinctio totam aliquam consequatur ea, delectus saepe soluta laboriosam nobis sapiente, temporibus maxime nihil optio eius iste rerum illum voluptate! Quia.quas commodi veniam iusto. Distinctio totam aliquam consequaturquas
+        commodi veniam iusto. Distinctio totam aliquam consequatur ea, delectus saepe soluta laboriosam nobis sapiente, temporibus maxime nihil optio eius iste rerum illum voluptate! Quia.quas commodi veniam iusto. Distinctio totam aliquam consequaturquas
+        commodi veniam iusto. Distinctio totam aliquam consequatur ea, delectus saepe soluta laboriosam nobis sapiente, temporibus maxime nihil optio eius iste rerum illum voluptate! Quia.quas commodi veniam iusto. Distinctio totam aliquam consequaturquas
+    </div>
+
+    <div id="three">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error vitae officia repellat amet dolor repudiandae dicta modi natus provident, facilis, sint soluta. Nostrum quae beatae tenetur totam modi cumque. Doloribus?Voluptas maiores quibusdam hic quidem
+        quas commodi veniam iusto. Distinctio totam aliquam consequatur ea, delectus saepe soluta laboriosam nobis sapiente, temporibus maxime nihil optio eius iste rerum illum voluptate! Quia.quas commodi veniam iusto. Distinctio totam aliquam consequaturquas
+    </div>
+
+    <style>
+        h1 {
+            font-size: 3vw;
+            /*responsive text*/
+        }
+    </style>
+
+    <h1>Lorem ipsum dolor sit amet.</h1>
+
+    <!-- FONT -->
+    <!-- font-family | font-style | font-weight | font-variant | font-size | font -->
+    <!-- @font-face rule-->
+
+    <!-- https://fonts.google.com/ -->
+    <!-- https://www.fonttr.com/ -->
+    <!-- https://www.dafont.com/ -->
+
+    <style>
+        div#four>h1 {
+            font-family: 'Courier New', Courier, monospace;
+            font-style: italic;
+            font-weight: 900;
+            font-variant: small-caps;
+        }
+    </style>
+
+    <div id="four">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+    </div>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;600&display=swap');
+        div#five>h1 {
+            font-family: 'Sansita Swashed', cursive;
+            font-weight: 600;
+        }
+        
+        div#five>h2 {
+            font-family: 'Sansita Swashed', cursive;
+            font-weight: 400;
+        }
+        
+        div#five>h3 {
+            font-family: 'Sansita Swashed', cursive;
+            font-weight: 300;
+        }
+    </style>
+
+    <div id="five">
+        <h1>MERT OZEN</h1>
+        <h2>MERT OZEN</h2>
+        <h3>MERT OZEN</h3>
+    </div>
+
+    <style>
+        @font-face {
+            font-family: "JMH COMICS";
+            src: url(fonts/JMH_COMICS.ttf);
+            font-style: normal;
+        }
+        
+        @font-face {
+            font-family: "JMH COMICS ITALIC";
+            src: url(fonts/JMH_COMICS_Italic.ttf);
+            font-style: italic;
+        }
+        
+        h1#normal {
+            font-family: "JMH COMICS";
+            font-style: normal;
+        }
+        
+        h1#italic {
+            font-family: "JMH COMICS";
+            font-style: italic;
+        }
+    </style>
+
+    <h1 id="normal">MERT OZEN</h1>
+    <h1 id="italic">MERT OZEN</h1>
+
+
+</body>
+
+</html>
