@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video and Audio</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+        }
+        
+        div.video {
+            background-color: black;
+        }
+        
+        div.video>video {
+            width: 100%;
+            height: 50vh;
+        }
+        
+        div.audio {
+            margin-top: 50px;
+        }
+        
+        audio {
+            width: 100%;
+        }
+        
+        iframe {
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- https://www.w3schools.com/tags/tag_video.asp -->
+
+    <div class="video">
+        <video autoplay loop>
+            <source src="media/Video.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- https://www.w3schools.com/tags/tag_audio.asp -->
+
+    <div class="audio">
+        <audio controls>
+            <source src="media/Music.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- https://www.w3schools.com/html/html_youtube.asp -->
+    <!-- Youtube üzerinden de kopyalanabilir -->
+
+    <iframe width="1920" height="1080" src="https://www.youtube.com/embed/T-SjfDtVQY4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+</body>
+
+</html>
