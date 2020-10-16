@@ -1,0 +1,60 @@
+/*Tablo Varsayılanları
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: gray;
+}*/
+
+table,
+th,
+td {
+    border: 1px solid black;
+    /* border-collapse: collapse; */
+}
+
+.caption-bottom {
+    caption-side: bottom;
+}
+
+.caption-top {
+    caption-side: top;
+}
+
+table.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.vw-25 {
+    width: 25vw;
+}
+
+.vw-20 {
+    width: 20vw;
+}
+
+thead {
+    color: white;
+    background-color: red;
+}
+
+tfoot {
+    color: blue;
+    font-weight: bold;
+}
+
+#tablo tr:nth-child(even) {
+    background-color: blue;
+    color: white;
+}
+
+#tablo tr:hover {
+    background-color: gray;
+    color: black;
+    cursor: pointer;
+}

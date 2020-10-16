@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<!-- tr:satır td:sütun th:sütun başlığı caption:tablo başlığı -->
+<!-- collapse:kenarlık sınırlandırma -->
+<!-- caption-side: başlık pozisyonu -->
+
+<body>
+
+    <h2>Yatay Tablo</h2>
+    <table class="caption-top">
+        <caption>Tablo Başlığı</caption>
+        <tr>
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th>Yaş</th>
+        </tr>
+        <tr>
+            <td>Mert</td>
+            <td>Özen</td>
+            <td>25</td>
+        </tr>
+    </table>
+
+    <h2>Dikey Tablo</h2>
+    <table class="caption-bottom">
+        <caption>Tablo Başlığı</caption>
+        <tr>
+            <th>Ad</th>
+            <td>Mert</td>
+        </tr>
+        <tr>
+            <th>Soyad</th>
+            <td>Özen</td>
+        </tr>
+        <tr>
+            <th>Yaş</th>
+            <td>25</td>
+        </tr>
+    </table>
+
+    <!-- Satır ve Sütun İşlemleri -->
+    <!-- table>tr>th*3^tr>td*4 -->
+    <table class="center mt-20 vw-25">
+        <tr>
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th colspan="2">Telefon</th>
+        </tr>
+        <tr>
+            <td>Mert</td>
+            <td>Özen</td>
+            <td>111-222-333</td>
+            <td>111-333-444</td>
+        </tr>
+    </table>
+
+    <table class="center mt-20 vw-25">
+        <tr>
+            <th>Ad</th>
+            <td>Mert</td>
+        </tr>
+        <tr>
+            <th>Soyad</th>
+            <td>Özen</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Telefon</th>
+            <td>111-222-333</td>
+        </tr>
+        <tr>
+            <td>111-333-444</td>
+        </tr>
+    </table>
+
+    <!-- Tablo İçeriğini Gruplama -->
+    <!-- thead:tablo başlığını bildirir -->
+    <!-- tbody:tablo içeriğini bildirir -->
+    <!-- tfoot:tablo alt bilgisini bildirir -->
+
+    <table class="center mt-20 vw-20">
+        <thead>
+            <tr>
+                <th>Ay</th>
+                <th>Tasarruf</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Eylül</td>
+                <td>300 ₺</td>
+            </tr>
+            <tr>
+                <td>Ekim</td>
+                <td>200 ₺</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Toplam</td>
+                <td>400 ₺</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <!-- Sütun Gruplama -->
+
+    <!-- table>colgroup>col*2^tr>th*3^tr*2>td*3 -->
+    <table class="center mt-20 vw-20">
+        <colgroup>
+            <col span="2" style="background-color: blue; color:white;">
+            <col style="background-color: green; color:white;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Ad</th>
+                <th>Soyad</th>
+                <th>Yaş</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mert</td>
+                <td>Özen</td>
+                <td>25</td>
+            </tr>
+            <tr>
+                <td>Mehmet</td>
+                <td>Özen</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>Mesut</td>
+                <td>Özen</td>
+                <td>21</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Satırları Biçimlendirme -->
+    <!-- odd:tek even:çift -->
+    <table id="tablo" class="center vw-20 mt-20">
+        <tr>
+            <td>06</td>
+            <td>Ankara</td>
+        </tr>
+        <tr>
+            <td>34</td>
+            <td>İstanbul</td>
+        </tr>
+        <tr>
+            <td>35</td>
+            <td>İzmir</td>
+        </tr>
+        <tr>
+            <td>37</td>
+            <td>Kastamonu</td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
