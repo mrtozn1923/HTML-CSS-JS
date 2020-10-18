@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <!-- Her sayfa için özel meta bilgisi üretilebilir. Burada anasayfa için bir meta
+    bilgisi üretilmiştir. -->
+    <meta charset="UTF-8">
+    <meta name="description" content="Bir web geliştiricisinin notları">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Mert Özen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mert Özen</title>
+    <style>
+        p {
+            font-size: 20pt;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Meta Etiketlerinin Arama Motorlarına Etkisi</h1>
+    <img src="img/GoogleSearchResult.PNG" alt="Meta Etiketleri ve Arama Sonuçları">
+
+    <hr>
+
+    <!-- En basit anlamsal etiket? -->
+    <h1>HTML Etiketleri?</h1>
+    <h2>Anlamsal (Semantic) Etiketler</h2>
+    <!-- HTML Entities -->
+    <h3>Başlık Etiketleri(&#60;h1&#62;-&#60;h6&#62;)</h3>
+
+    <hr>
+
+    <img src="img/HTML4 vs HTML5 Page Structure.jpg" alt="HTML4 vs HTML 5">
+    <hr>
+    <img src="img/HTML5PageStructure.png" alt="HTML5 Page Structure">
+    <hr>
+
+    <h1>Daha Fazla Anlamsal (Semantic) Etiket!</h1>
+    <!-- HTML5 de hem anlamsal hemde yapısal görevi olan etiketlerde var. -->
+    <figure>
+        <img src="img/TurkBayragi.jpg" alt="Türkiye Bayrağı" style="width:300px">
+        <figcaption>Türk Bayrağı</figcaption>
+        <img src="img/AzerbaycanBayragi.jpg" alt="Azerbaycan Bayrağı" style="width:300px">
+        <figcaption>Azerbaycan Bayrağı</figcaption>
+    </figure>
+    <!-- Sayfada diyagram, fotoğraf, kod vb. içeriği tutmak ve tanımlamak için kullanılır. Ancak genelde içerikten ayrı olarakta tek başına ifade eden şeyler için kullanılır.-->
+    <p>Bayrakları Bayrak Yapan Üstündeki <em>Kandır.</em> Toprak Eğer <strong>Uğrunda Ölen</strong> Varsa Vatandır.</p>
+    <hr style="width: 50%;">
+    <!-- Hem anlamsal hemde yapısal ögeler bir arada kullanılabilmektedir. -->
+    <p><dfn title="HyperText Markup Language">HTML</dfn> is the standard markup language for creating web pages.</p>
+    <!-- Doğru olmayan bilgi -->
+    <p><s>Dorğu olmayan bilgi</s></p>
+    <!-- Belgeden silinen metin -->
+    <p><del>Belgeden silinen bilgi</del></p>
+    <!-- CSS tarafında üzerini çizmek -->
+    <p style="text-decoration: line-through;">CSS üzeri çizili metin</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati aliquam quisquam harum, voluptate <span style="text-decoration: line-through;"> nostrum itaque </span> eligendi id odit eius. Suscipit repudiandae quae culpa aspernatur, asperiores
+        tempore? Necessitatibus fugit quod architecto.</p>
+
+    <hr>
+
+    <h1>Başka Etiketler ?</h1>
+    <h2>Örnek (Sample)</h2>
+    <p>Message from my computer:</p>
+    <p><samp>File not found.<br>Press F1 to continue</samp></p>
+
+    <hr style="width: 50%;">
+
+    <style>
+        kbd {
+            color: red;
+        }
+    </style>
+
+    <h2>Klavye Tuşları (Keyboard)</h2>
+    <p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy text (Windows).</p>
+    <p>Press <kbd>Cmd</kbd> + <kbd>C</kbd> to copy text (Mac OS).</p>
+
+    <hr style="width: 50%;">
+
+    <h2>Değişkenler (Variable)</h2>
+    <p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+
+    <hr style="width: 50%;">
+
+    <style>
+        pre {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+
+    <h2>Biçimlendirilmiş Metin (Preformatted)</h2>
+    <pre style="font-size: 20pt;">
+Text in a pre element
+    is displayed    in a fixed-width
+font, and it preserves
+            both      spaces  and
+line    breaks 
+    </pre>
+
+    <hr style="width: 50%;">
+
+    <h2>Kod Parçaları (Code)</h2>
+    <style>
+        code {
+            font-family: Consolas, "courier new";
+            color: crimson;
+            background-color: #f1f1f1;
+            padding: 2px;
+            font-size: 105%;
+        }
+    </style>
+    <p>The HTML <code>button</code> tag defines a clickable button.</p>
+    <p>The CSS <code>background-color</code> property defines the background color of an element.</p>
+
+</body>
+
+</html>
