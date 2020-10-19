@@ -1,0 +1,79 @@
+
+    https://www.w3schools.com/cssref/css3_pr_mediaquery.asp
+
+    @media not|only mediatype and (mediafeature and|or|not mediafeature) {
+    CSS-Code;
+    } 
+
+    media types: all | print | screen | speech -->
+    media features: max-height | min-height | max-width | min-width | width-->
+
+    -------------------------------------------------------
+    Tek bir css dosyası içerisinde de medya sorguları yazılabilir
+     
+    <style>
+    body {
+         background-color: lightblue;
+    }
+
+    @media screen and (min-width: 400px) {
+    body {
+        background-color: lightgreen;
+    }
+    }
+
+    @media screen and (min-width: 800px) {
+    body {
+        background-color: lavender;
+    }
+    } 
+    </style>
+    
+    -------------------------------------------------------
+    Her medya sorgusuna özel css dosyası oluşturulabilir
+     
+    <link rel="stylesheet" media="screen and (min-width: 900px)" href="widescreen.css">
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="smallscreen.css"> 
+
+    -------------------------------------------------------
+    Cihaz yönlendirmesine (orientation) göre ayrı css kodları işletilebilir.
+    landscape: yatay
+    portrait: dikey
+
+    @media only screen and (orientation: landscape) {
+        body {
+            background-color: lightblue;
+        }
+    }
+
+    -------------------------------------------------------
+    
+
+    Birden fazla sorgu birleştirilebilir
+
+    /* When the width is between 600px and 900px OR above 1100px - change the appearance of <div> */
+    @media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
+        div.example {
+            font-size: 50px;
+            padding: 50px;
+            border: 8px solid black;
+            background: yellow;
+        }
+    }
+    
+    -------------------------------------------------------
+    Bootstrap Responsive Breakpoints 
+    https://getbootstrap.com/docs/4.1/layout/overview/
+    
+     
+    // Small devices (landscape phones, 576px and up)
+    @media (min-width: 576px) { ... }
+
+    // Medium devices (tablets, 768px and up)
+    @media (min-width: 768px) { ... }
+
+    // Large devices (desktops, 992px and up)
+    @media (min-width: 992px) { ... }
+
+    // Extra large devices (large desktops, 1200px and up)
+    @media (min-width: 1200px) { ... } 
