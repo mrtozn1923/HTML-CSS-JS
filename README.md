@@ -1,4 +1,4 @@
-# Youtube Kanalı Deposu
+# HTML-CSS-JS Youtube Oynatma Listesi
 
 Burada youtube kanalımda oluşturmuş olduğum HTML-CSS-JS oynatma listesine ait uygulama
 dosyalarını bulabilirsiniz. Aşağıdaki bağlantılardan ilgili oynatma listesine ve kanala ulaşabilirsiniz.
