@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: red;
+    height: 100px;
+}
+
+nav {
+    background-color: green;
+    height: 50px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 20px;
+    background-color: blue;
+    padding: 20px;
+}
+
+section {
+    height: 200px;
+    background-color: white;
+}
+
+footer {
+    background-color: purple;
+    height: 50px;
+}
+
+@media only screen and (min-width: 600px) {
+    /*Tablet*/
+    main {
+        grid-template-columns: calc(70% - 20px) 30%;
+        grid-template-rows: 200px;
+        column-gap: 20px;
+        min-height: calc(100vh - 200px);
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    /*Desktop*/
+    main {
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: 200px;
+        column-gap: 20px;
+        min-height: calc(100vh - 200px);
+    }
+}
