@@ -34,7 +34,8 @@ nav {
 main {
     background-color: blue;
     padding: 10px;
-    /* height: 100vh; mobil de içerik kadar uzasın*/
+    /* height: 100vh; */
+    /*mobil de içerik kadar uzasın*/
 }
 
 section {
@@ -91,7 +92,7 @@ footer {
         width: 100%;
     }
     main {
-        height: calc(100vh - 200px);
+        min-height: calc(100vh - 200px);
     }
 }
 
@@ -134,6 +135,6 @@ footer {
         width: 100%;
     }
     main {
-        height: calc(100vh - 200px);
+        min-height: calc(100vh - 200px);
     }
 }
