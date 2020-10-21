@@ -34,7 +34,7 @@ nav {
 main {
     background-color: blue;
     padding: 10px;
-    height: 100vh;
+    /* height: 100vh; mobil de içerik kadar uzasın*/
 }
 
 section {
