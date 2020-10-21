@@ -1,0 +1,48 @@
+Referans Kaynak: w3schools
+
+Parent Element(Container)->display:flex | inline-flex
+---------------------------
+flex-direction: row | row-reverse | column | column-reverse
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_flex-direction&preval=row
+
+flex-wrap: nowrap | wrap | wrap-reverse
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_flex-wrap&preval=nowrap
+
+flex-flow: flex-direction flex-wrap ->(shorthand(kısaltma))
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_flex-flow
+
+justify-content: flex-start | flex-end | center | space-between | space-arround | space-evenly
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_justify-content&preval=flex-start
+
+align-items: stretch | center | flex-start | flex-end | baseline
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_align-items&preval=stretch
+
+NOT:align-items özelliğini geçersiz kılmak için align-self kullanılabilir
+
+align-content:stretch | center | flex-start | flex-end | space-between | space-around
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_align-content&preval=stretch 
+
+NOT:content çoklu satırlar için kullanılır
+
+Flex Items
+-------------
+order: number(0) | initial | inherit ->sıralama
+https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_order
+
+flex-grow: number(0) | initial | inherit ->büyüklük değeri
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_flex-grow&preval=1
+
+flex-shrink: number(1) | initial | inherit ->küçüklük değeri
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_flex-shrink&preval=1
+
+flex-basis: auto | number | initial | inherit ->başlangıç genişliği
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_flex-basis&preval=10px
+
+flex: flex-grow flex-shrink flex-basis | auto | initial | inherit ->kısaltma
+
+align-self: auto | stretch | center | flex-start | flex-end | baseline ->seçili eleman için hizalama
+https://www.w3schools.com/cssref/playit.asp?filename=playcss_align-self&preval=auto
+
+
+Tavsiye:
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
