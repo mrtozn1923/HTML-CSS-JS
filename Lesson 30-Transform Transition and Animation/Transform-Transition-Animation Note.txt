@@ -1,0 +1,92 @@
+https://www.w3schools.com/cssref/css3_pr_transform.asp
+
+CSS 2D Transforms
+-----------------------
+transform:translate(50px,100px) ->Konumlandırma (50px sağa,100px aşağı)
+transform:translateX(10px)
+transform:translateY(20px) 
+transform:rotate(20deg) ->20 derece saat yönünde döndür
+transform:scale(2,2) ->Boyutu X ve Y eksenin 2 katına çıkar
+transform:scaleX(2)
+transform:scaleY(2)
+transform:skew(10deg,10deg) ->10 derece x ekseninde 10 derece y ekseninde eğ
+transform:skewX()
+transform:skewY()
+transform:matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY())
+
+transfrom-origin:x y z->Dönüştürülmüş elemanı konumlandırma - varsayılan (50% 50% 0)
+
+CSS 3D Transforms
+-----------------------
+transform:translate3d(x,y,z)
+transform:translateX(x)
+transform:translateY(y)
+transform:translateZ(z)
+transform:scale3d(x,y,z)
+transform:scaleX(x)
+transform:scaleY(y)
+transform:scaleZ(z)
+transform:rotate3d(x,y,z,angle)
+transform:rotateX(20deg)
+transform:rotateY()
+transform:rotateZ()
+transform:perspective(100px) ->ögenin ne kadar uzağa yerleştirileceği
+
+transfrom-origin:x y z->Dönüştürülmüş elemanı konumlandırma - varsayılan (50% 50% 0)
+
+CSS Transitions
+-----------------------
+transition:property duration timing-function delay
+
+transition-property:(all) | property | none
+transition-duration:(0s) 5s | 2ms
+transition-timing-function:(ease)|linear|ease-in|ease-out|...|cubic-bezier(n,n,n,n)
+transition-delay:(0s) 5s | 2ms
+
+property:Geçiş işleminin uygulanacağı CSS özelliğini belirtir (örn:width)
+duration:Geçiş efektinin tamamlanması için kaç saniye veya milisaniye gerektiğini belirtir
+timing-function:Geçiş efektinin hız eğrisini belirtir
+delay:Gecikme süresi (saniye veya milisaniye)
+
+CSS Animations
+--------------------------
+Hangi CSS Özellikleri Animasyona Uygun?
+https://www.w3schools.com/cssref/css_animatable.asp
+
+@keyframes mymove {
+  from {top: 0px;}
+  to {top: 200px;}
+}
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  position: relative;
+  animation: mymove 5s infinite; ->Asıl animasyon özelliğinin uygulandığı yer
+}
+@keyframes mymove {
+  0%   {top: 0px; left: 0px; background: red;}
+  25%  {top: 0px; left: 100px; background: blue;!important} ->!important ifadesi alan bir kare yok sayılır
+  50%  {top: 100px; left: 100px; background: yellow;}
+  75%  {top: 100px; left: 0px; background: green;}
+  100% {top: 0px; left: 0px; background: red;}
+}
+
+
+animation:name duration timing-function delay iteration-count direction fill-mode play-state;
+	        (none    0           ease        0          1          normal     none     running)
+
+animation-name:(none) ->bağlamak istediğiniz anakare(keyframe) adı
+animation-duration:(0s) ->animasyonun tamamlanma süresi (s/ms)
+animation-timing-function:(ease) ->linear|ease|ease-in|...|steps(int,start|end)|cubic-bezier(n,n,n,n)
+animation-delay:(0s) ->gecikme süresi (s/ms)
+animation-iteration-count:(1) | infinite ->tekrarlama sayısı
+animation-direction:(normal)|reverse|alternate|alternate-reverse ->hareket yönü
+animation-fill-mode:(none)|forwards|backwards|both ->animasyon bitince gerçekleşecek işlem
+animation-play-state:(running) | paused ->animasyonu duraklatmak ve çalıştırmak için kullanılır
+
+
+
+
+
+
