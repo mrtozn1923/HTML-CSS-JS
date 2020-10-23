@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+    <style>
+        .border {
+            border: 5px solid black;
+        }
+        
+        .shadow {
+            -webkit-box-shadow: 11px 13px 20px 8px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 11px 13px 20px 8px rgba(0, 0, 0, 0.75);
+            box-shadow: 11px 13px 20px 8px rgba(0, 0, 0, 0.75);
+        }
+    </style>
+    <!-- <script src="script.js"></script> buraya ekleme-->
+</head>
+
+<!-- https://www.w3schools.com/js/js_htmldom_document.asp -->
+
+<!-- DOM, bir W3C (World Wide Web Consortium) standardıdır. DOM, belgelere erişim için bir standart tanımlar: "W3C Belge Nesne Modeli (DOM), programların ve komut dosyalarının bir belgenin içeriğine, yapısına ve stiline dinamik olarak erişmesine ve bunları güncellemesine izin veren bir platform ve dilden bağımsız bir arabirimdir." W3C DOM standardını 3 farklı bölüme ayrılmıştır: 
+
+Core DOM - standard model for all document types
+XML DOM - standard model for XML documents
+HTML DOM - standard model for HTML documents
+-->
+
+<body>
+
+    <!-- Method vs Property -->
+
+    <p id="paragraph"></p>
+    <script>
+        window.document.getElementById("paragraph").innerHTML = "Merhaba";
+        // document.getElementById("paragraph").innerHTML = "Merhaba";
+    </script>
+    <!--
+         getElementById ->Method 
+         innerHTML ->Property
+    -->
+    <h1>Başlık</h1>
+    <h1>Başlık2</h1>
+    <h1>Başlık3</h1>
+
+    <div class="box"></div>
+
+    <button type="button" onclick="shadowRemove()">Gölge Kaldır</button>
+    <button type="button" onclick="shadowAdd()">Gölge Ekle</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
