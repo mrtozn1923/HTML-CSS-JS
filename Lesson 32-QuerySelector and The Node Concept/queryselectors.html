@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Selectors</title>
+</head>
+
+<body>
+
+    <!-- CSS Selectors -->
+    <!-- https://www.w3schools.com/cssref/css_selectors.asp -->
+    <!-- CSS Selector Tester -->
+    <!-- https://www.w3schools.com/cssref/trysel.asp -->
+
+    <h2 class="example">Başlık</h2>
+    <p class="example">Paragraf</p>
+
+    <button onclick="selector()">Renk Değiştir</button>
+    <button onclick="selectors()">Çoklu Renk Değiştir</button>
+
+    <script>
+        function selector() {
+            var element = document.querySelector(".example")
+            element.style.backgroundColor = "red";
+            element.style.color = "white";
+        }
+
+        function selectors() {
+            var elements, i;
+            elements = document.querySelectorAll(".example");
+            console.log(elements);
+            for (i = 0; i < elements.length; i++) {
+                if (elements[i].nodeType == 1) {
+                    elements[i].style.backgroundColor = "green";
+                    elements[i].style.color = "white";
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

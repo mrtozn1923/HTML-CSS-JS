@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="tr" id="wrapper">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nodes</title>
+</head>
+
+<body id="container">
+    <!-- Aşağıdaki DIV için toplam 11 düğüm(node) vardır -->
+    <!-- Çünkü her elemanın öncesinde ve sonrası boşluk(text tipinde) vardır -->
+    <!-- Ayrıca yorum satırlarıda düğümden sayılmaktadır. -->
+    <div id="box">
+        <!-- 1.index 2.düğüm-->
+        <h1>Başlık</h1>
+        <!-- 5.index 6.düğüm -->
+        <p>Paragraf</p>
+        <!-- 9.index 10.düğüm -->
+    </div>
+
+    <script>
+        //UYARI:Birden fazla eleman dönen durumlarda aşağıdakiler kullanılamaz.
+        // var c = document.getElementById("wrapper").childNodes;
+
+        // var c = document.getElementById("wrapper").firstChild;
+        // var c = document.getElementById("wrapper").childNodes[0];
+        // var c = document.getElementById("wrapper").lastChild;
+
+        // var c = document.getElementById("container").firstChild;
+
+        // var c = document.getElementById("box").childNodes;
+        // var c = document.getElementById("box").childNodes.length;
+        // var c = document.getElementById("box").firstChild;
+        // var c = document.getElementById("box").lastChild;
+        // var c = document.getElementById("box").childNodes[3];
+
+        // var c = document.getElementById("box").childNodes[3].nodeName;
+
+        // var c = document.getElementById("box").childNodes[3].nodeType;
+
+        // var c = document.getElementById("box").childNodes[3].textContent;
+        // var c = document.getElementById("box").childNodes[3].nodeValue;
+        // var c = document.getElementById("box").childNodes[3].childNodes[0];
+        // var c = document.getElementById("box").childNodes[3].childNodes[0].nodeValue;
+
+        // console.log(c);
+
+        //ROOT NODES
+        // console.log(document.body);
+        // console.log(document.documentElement);
+
+        // -----------------------------------------------------------------------
+
+        // nodeValue için geri dönüş değerleri
+        // ------------------------------------
+        // Öğe(element (tip 1)) düğümleri ve belge düğümleri için boş değer döndürür
+        // Öznitelik düğümleri için özniteliğin değerini verir
+        // Metin düğümlerinin içeriğini döndürür
+        // Yorum düğümlerinin içeriğini döndürür
+
+        // nodeName için geri dönüş değerleri
+        // ------------------------------------
+        // Bir eleman(element) düğümünün nodeName, etiket adı ile aynıdır
+        // Bir öznitelik(attribute) düğümünün nodeName, öznitelik adıdır
+        // Bir metin düğümünün nodeName değeri her zaman metindir
+        // Belge(document) düğümünün adı her zaman #document şeklindedir
+    </script>
+
+</body>
+
+</html>
