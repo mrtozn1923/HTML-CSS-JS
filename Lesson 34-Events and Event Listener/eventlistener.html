@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #box {
+            width: 200px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: blue;
+        }
+        
+        #parent-box {
+            margin-top: 10px;
+            width: 200px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: green;
+            padding-top: 50px;
+        }
+        
+        #child-box {
+            width: 200px;
+            height: 100px;
+            background-color: red;
+        }
+        
+        a {
+            text-align: center;
+            margin-top: 100vh;
+            margin-bottom: 200px;
+            display: inline-block;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="box"></div>
+
+    <div id="parent-box">
+        <div id="child-box"></div>
+    </div>
+
+    <a href="" id="link">Tıkla</a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

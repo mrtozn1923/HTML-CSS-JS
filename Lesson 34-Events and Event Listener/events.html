@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+</head>
+
+<!-- https://www.w3schools.com/js/js_events.asp -->
+<!-- https://www.w3schools.com/jsref/obj_events.asp -->
+<!-- https://www.w3schools.com/jsref/dom_obj_event.asp -->
+
+<body>
+
+    <button onclick="getDate()">Tarih Ne?</button>
+
+    <button onclick="document.getElementById('paragraf').innerHTML='Tarih:'+Date()">
+    Tarih Ne?</button>
+
+    <button id="btnMessage">Mesaj</button>
+
+    <button onclick="this.innerHTML='Tıklandı'">Tıkla</button>
+
+    <p id="paragraf">Tarih:?</p>
+
+
+    <script>
+        function getDate() {
+            document.getElementById('paragraf').innerHTML = 'Tarih:' + Date();
+        }
+
+        document.getElementById('btnMessage').onclick = function getMessage() {
+            window.alert("Merhaba");
+            getDate();
+        };
+    </script>
+</body>
+
+</html>
