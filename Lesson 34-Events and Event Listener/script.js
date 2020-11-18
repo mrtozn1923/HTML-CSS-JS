@@ -5,7 +5,7 @@ var box = document.getElementById('box');
 box.addEventListener("click", function alert() {
     window.alert("Hello World!");
 });
-// box.addEventListener("mouseover", changeColor; //parametre gönderilemez
+// box.addEventListener("mouseover", changeColor); //parametre gönderilemez
 box.addEventListener("mouseover", function() { changeColor("red") });
 box.addEventListener("mouseout", function() { changeColor("blue") });
 
