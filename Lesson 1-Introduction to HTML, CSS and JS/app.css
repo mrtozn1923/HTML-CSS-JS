@@ -1,0 +1,10 @@
+h1{
+    color:red;
+    border: 1px solid black;
+}
+span{
+    border: inherit;
+}
+h1:hover{
+    color:blue;
+}
