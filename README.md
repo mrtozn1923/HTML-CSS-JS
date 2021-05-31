@@ -5,4 +5,4 @@ dosyalarını bulabilirsiniz. Aşağıdaki bağlantılardan ilgili oynatma liste
 
 [Youtube Kanalım](https://www.youtube.com/channel/UCxSgy7kAjD5r9zXMxt9DtAQ?view_as=subscriber)
 
-[HTML-CSS-JS](https://www.youtube.com/watch?v=wI05oYbVeiA&list=PL2gZB_AT1f5YVoGL9SRSfum5DNzXycCFQ)
+[HTML-CSS-JS](https://www.youtube.com/playlist?list=PL2gZB_AT1f5YVoGL9SRSfum5DNzXycCFQ)
